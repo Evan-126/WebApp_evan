@@ -86,30 +86,29 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		exampleVariable3 = 0;
 	}
 
-	function toNewPage()
+	function newFunction()
 	{
 		exampleVariable1 = parseFloat(document.getElementByld("firstInputBox").value);
 		exampleVariable1 = parseFloat(document.getElementByld("secondInputBox").value);
 
-	}
+		for(let arbitValue = 0; arbitValue < 5; arbitValue++)
+		{
+			exampleVariable1++;
+			var smileyImage = document.createElement("img");
+			smileyImage.src = "https://i.imgur.com/jctdkSS.png";
+			document.getElementById("arbitValue").appendChild(smileyImage);
+		}
 
-	for(let arbitValue = 0; arbitValue < 5; arbitValue++)
-	{
-		exampleVariable1++;
-		var smileyImage = document.createElement("img");
-		smileyImage.src = "https://i.imgur.com/jctdkSS.png";
-		document.getElementById("arbitValue").appendChild(smileyImage);
+		for(let tibraValue = 0; arbitValue < 5; arbitValue++)
+		{
+			exampleVariable1++;
+			var frownyImage = document.createElement("img");
+			frownyImage.src = "https://i.imgur.com/jctdkSS.png";
+			document.getElementById("tibraValue").appendChild(frownyImage);
+		}
 	}
-
-	for(let tibraValue = 0; arbitValue < 5; arbitValue++)
-	{
-		exampleVariable1++;
-		var frownyImage = document.createElement("img");
-		frownyImage.src = "https://i.imgur.com/jctdkSS.png";
-		document.getElementById("tibraValue").appendChild(frownyImage);
-	}
-
-	document.getElementById("
+		
+	document.getElementById("alttext").innerHTML="You inserted" + exampleVariable1 + "smiley faces and " + exampleVariable2 + " frowny faces!";
 	
 </script>
   
@@ -186,30 +185,25 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-grey">Button 1</a>
   <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-grey">Button 2</a>
   <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-grey">Button 3</a>
-    
+  <a href="#altpage" onclick="newFunction();" class="w3-btn w3-black">Click This!</a>
   </center>
 </div>  
-  
-  
-  
 
-	  
-	  
-	  
 <!-- ALT SUBPAGE -->	  
-<!-- <div id="altpage" class="page>	  
-	<div id="altpage" class="w3-container w3-flat-carrot">
+<div id="altpage" class="page">	  
+	<div id="altheader" class="w3-container w3-flat-carrot">
 		<h1>ALTERNATE SUBPAGE</h1>
 	</div>
 
 	<!-- Main content of the page.-->
-<!-- 	<div id="altpage" class="w3-container">
-		<p id="altpage">DISPLAYING IMAGES</p>
+	<center>
+	<div id="altcontent" class="w3-container">
+		<p id="altText">DISPLAYING IMAGES</p>
 	</div>
--->
 <!-- 	  A link that runs a function when clicked and takes user to a new page
 	   -->
-	  <a href="#altpage" class="w3-btn w3-black" onclick="toNewPage();">Click This!</a>
+	<a href="#content" onclick="resetVariables();" class="w3-btn w3-black">Back home</a>
+	</center>
 </div>	  
 	  
 <!--LAST SUBPAGE-->
