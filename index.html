@@ -35,9 +35,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <!--Javascript code.-->
 <script>
-	var exampleVariable1 = 0;
-	var exampleVariable2 = 0;
-	var exampleVariable3 = 0;
+
+	// all of these variables will be integers eventually
+	// for gender and relationship status, clicking the button will assign a value (1, 2, maybe 3) to these variables
+	// years and age are already just numbers, no extra action needed there
+	// unrelated but i was playinga round on desmos trying to find a function that accurately represented the time people would stay together using just length of relationship stats
+	// it didn't work surprise surprise
+	var year = 0;
+	var gender = 0;
+	var reStatus = 0;
+	var age = 0;
+	var futureLength = 0;
 	
 	function exampleFunction1()
 	{
@@ -49,8 +57,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 		alert("You just ran an addition function!");
 		console.log("Addition function was run.");
+
 	}
-	
+
+	function statusLength()
+		// runs a math function on the given time together
+		// the function is very scientific watch
+		futureLength = 0.25; 
+		
+		
 	function exampleResultsFunction()
 	{
 		document.getElementById("endResults").innerHTML = "Your final result is: " + exampleVariable3;
@@ -95,7 +110,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<h1>Evan can tell you!</h1>
 	</div>
 	
-	  <p>by taking just two key data points, I can very accurately, with only a 75% margin of error, determine whether or not you will have a valentine this Valentine's Day</p>
+	  <p>by taking just four key data points, I can very accurately, with only a 75% margin of error, determine whether or not you will have a valentine this Valentine's Day</p>
 	
 	  <a href="#one" class="w3-btn w3-grey w3-round">Get Started!</a>
 	
