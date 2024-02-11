@@ -17,3 +17,19 @@ then two other buttons
 function with 6 if statements for each possibility
 all take you to the same final page with text stating your percentage (and an encouraging message)
 there will be an attempt at a picture on the final page
+
+
+ok ok revisions: I'm actually reading the assignment now and i see that I need like 5 whole pages
+so: 
+home page
+gender? page
+relationship? page
+results page
+happy valentines day!! page 
+all pages will be visited, in that order
+calculated result will be completely accurate because my math is perfect and its the way to world works trust
+looks like that was the only thing I didnt do 
+(I don't remember the practice mentioning forms but after a quick goole search ik what they are)
+have no idea what they do, and will trial and error the living shit out of this, but it'll be fun (no it wont i dont like websites)
+
+if youve actually read all this instead of just testing the website literally what are you doing.
