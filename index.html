@@ -41,7 +41,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	// years and age are already just numbers, no extra action needed there
 	// unrelated but i was playinga round on desmos trying to find a function that accurately represented the time people would stay together using just length of relationship stats
 	// it didn't work surprise surprise
-	var year = 0;
+	var yearTogether = 0;
 	var gender = 0;
 	var reStatus = 0;
 	var age = 0;
@@ -61,10 +61,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	}
 
 	function statusLength()
-		// runs a math function on the given time together
+		// runs a math function on the given time together and age
 		// the function is very scientific watch
-		futureLength = 0.25; 
-		
+		// futureLength = 3 months; 
+		// decided not to use the above function, might get me a bad grade :(
+		futureLength = ((0.04 * age)**3) + (0.5*yearTogether)
+		alert("Calculated.. You might not like this"
 		
 	function exampleResultsFunction()
 	{
