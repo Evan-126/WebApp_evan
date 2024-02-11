@@ -85,6 +85,32 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		exampleVariable2 = 0;
 		exampleVariable3 = 0;
 	}
+
+	function toNewPage()
+	{
+		exampleVariable1 = parseFloat(document.getElementByld("firstInputBox").value);
+		exampleVariable1 = parseFloat(document.getElementByld("secondInputBox").value);
+
+	}
+
+	for(let arbitValue = 0; arbitValue < 5; arbitValue++)
+	{
+		exampleVariable1++;
+		var smileyImage = document.createElement("img");
+		smileyImage.src = "https://i.imgur.com/jctdkSS.png";
+		document.getElementById("arbitValue").appendChild(smileyImage);
+	}
+
+	for(let tibraValue = 0; arbitValue < 5; arbitValue++)
+	{
+		exampleVariable1++;
+		var frownyImage = document.createElement("img");
+		frownyImage.src = "https://i.imgur.com/jctdkSS.png";
+		document.getElementById("tibraValue").appendChild(frownyImage);
+	}
+
+	document.getElementById("
+	
 </script>
   
   
@@ -170,11 +196,21 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	  
 	  
 	  
-	  
-	  
-	  
-	  
-	  
+<!-- ALT SUBPAGE -->	  
+<!-- <div id="altpage" class="page>	  
+	<div id="altpage" class="w3-container w3-flat-carrot">
+		<h1>ALTERNATE SUBPAGE</h1>
+	</div>
+
+	<!-- Main content of the page.-->
+<!-- 	<div id="altpage" class="w3-container">
+		<p id="altpage">DISPLAYING IMAGES</p>
+	</div>
+-->
+<!-- 	  A link that runs a function when clicked and takes user to a new page
+	   -->
+	  <a href="#altpage" class="w3-btn w3-black" onclick="toNewPage();">Click This!</a>
+</div>	  
 	  
 <!--LAST SUBPAGE-->
 <div id="finalpage" class="page">
