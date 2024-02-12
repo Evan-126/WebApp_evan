@@ -49,7 +49,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 
 
-	function statusLength()
+	function runTimeLeft()
+		{
 		// runs a math function on the given time together and age
 		// the function is very scientific watch
 		// futureLength = 3 months; 
@@ -57,14 +58,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		age = parseFloat(document.getElementById("ageBox".value);
 		yearTogether = parseFloat(document.getElementById("yearTogBox".value);
 	
-		futureLength = ((0.04 * age)**3) + (0.5*yearTogether);
+		timeLeft = ((0.04 * age)**3) + (0.5*yearTogether);
 		alert("Calculated.. You might not like this");
 		console.log("Yeah you're screwed");
-		
-	function printTimeLeft() //function to print the relationship length results
-	{
-		document.getElementById("TimeLeft").innerHTML = "Your relationship will last " + futureLength + " more years.";
+
+		document.getElementById("timeLeft").innerHTML = "Your relationship will last " + futureLength + " more years.";
 		resetVariables();
+		}
+		
+	function printtimeLeft() //function to print the relationship length results
+	{
+		
 	}
 
 	function printLikelihood() // function to pring the likelihood results (also very mathematical)
@@ -178,7 +182,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<br><br><br>
 	</form>
 
-	  <a href="#altpage" onclick="printTimeLeft();" class="w3-btn w3-black">How much longer do I have?</a>
+	  <a href="#altpage" onclick="printtimeLeft();" class="w3-btn w3-black">How much longer do I have?</a>
   </center>
 </div>  
 
@@ -216,7 +220,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <center>
     
 	  <div id="finalcontent" class="w3-container">
-		  <p id="TimeLeft">FINAL PAGE CONTENT GOES HERE</p>
+		  <p id="timeLeft">FINAL PAGE CONTENT GOES HERE</p>
 	  </div>
   
   <a class="w3-btn w3-black" onclick="exampleResultsFunction();">Click me!
