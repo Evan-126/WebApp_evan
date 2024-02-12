@@ -47,18 +47,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	var age = 0;
 	var futureLength = 0;
 	
-	function exampleFunction1()
-	{
-		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
-    		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
-		
-		exampleVariable3 = exampleVariable1 + exampleVariable2;
-		
-		alert("You just ran an addition function!");
-		console.log("Addition function was run.");
 
-	}
 
 	function statusLength()
 		// runs a math function on the given time together and age
@@ -70,20 +59,53 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 		futureLength = ((0.04 * age)**3) + (0.5*yearTogether);
 		alert("Calculated.. You might not like this");
+		console.log("Yeah you're screwed");
 		
-	function exampleResultsFunction()
+	function printTimeLeft() //function to print the relationship length results
 	{
-		document.getElementById("endResults").innerHTML = "Your final result is: " + exampleVariable3;
+		document.getElementById("TimeLeft").innerHTML = "Your relationship will last " + futureLength + " more years.";
 		resetVariables();
 	}
-	
+
+	function printLikelihood() // function to pring the likelihood results (also very mathematical)
+	{
+		document.getElementById("valPercent").innerHTML = "Your likelihood of getting a valentine is " + valCent + " percent.";
+		resetVariables();
+	}
 	function resetVariables()
 	{
-		exampleVariable1 = 0;
-		exampleVariable2 = 0;
-		exampleVariable3 = 0;
+		yearTogether = 0;
+		gender = 0;
+		reStatus = 0;
+		age = 0;
+		futureLength = 0;
 	}
 
+	function setMale
+	{
+		gender = 1;
+	}
+
+	function setFemale
+	{
+		gender = 2;
+	}
+
+	function setOther
+	{
+		gender = 3;
+	}
+	
+	if (condition) 
+	{
+		// code to be executed
+	}
+
+	else if (other condition
+	{
+		// same shit 
+	}
+	
 </script>
   
 
@@ -103,8 +125,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 .page:target {left: 0vw; z-index: 1;}
 	
 </style>
-
-
+	
 
 <!--Main HTML body section.-->
 <body>
@@ -117,7 +138,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	  <p>by taking just four key data points, I can very accurately, with only a 75% margin of error, determine whether or not you will have a valentine this Valentine's Day</p>
 	
-	  <a href="#one" class="w3-btn w3-grey w3-round">Get Started!</a>
+	  <a href="#one" class="w3-btn w3-grey w3-round">Time to find out!</a>
 	
 	  <p>The following code has been developed by evan, but all the cool stuff was done by the two people listed at the top of this code in the comments. 
 
@@ -186,7 +207,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <center>
     
 	  <div id="finalcontent" class="w3-container">
-		  <p id="endResults">FINAL PAGE CONTENT GOES HERE</p>
+		  <p id="TimeLeft">FINAL PAGE CONTENT GOES HERE</p>
 	  </div>
   
   <a class="w3-btn w3-black" onclick="exampleResultsFunction();">Click me!
