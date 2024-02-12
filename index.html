@@ -46,6 +46,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	var reStatus = 0;
 	var age = 0;
 	var futureLength = 0;
+	var valChance = 0;
 	
 
 
@@ -56,7 +57,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		// futureLength = 3 months; 
 		// decided not to use the above function, might get me a bad grade :(
 		age = parseFloat(document.getElementById("ageBox".value);
-		yearTogether = parseFloat(document.getElementById("yearTogBox".value);
+		yearTogether = parseFloat(document.getElementById("relaLengthBox".value);
 	
 		timeLeft = ((0.04 * age)**3) + (0.5*yearTogether);
 		alert("Calculated.. You might not like this");
@@ -68,7 +69,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 	function printLikelihood() // function to pring the likelihood results (also very mathematical)
 	{
-		document.getElementById("valPercent").innerHTML = "Your likelihood of getting a valentine is " + valCent + " percent.";
+		document.getElementById("valChance").innerHTML = "Your likelihood of getting a valentine is " + valChance + " percent.";
 		resetVariables();
 	}
 	function resetVariables()
@@ -78,6 +79,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		reStatus = 0;
 		age = 0;
 		futureLength = 0;
+		valChance = 0;
 	}
 	//list of functions that I can run to set the variables to certain integer values. 
 	// these functions will be run when the respective buttons are pressed. 
@@ -86,24 +88,31 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function setOther{gender = 3;}
 	function setSingle{reStatus = 1;}
 	function setTaken{reStatus = 2;}
+	function setComplicated{reStatus = 3;}
 
 	//if ands to determins what the valentine chances are
 	if(gender = 1)
 		if(reStatus = 1)
-			// some value
+			valChance = 1;
+		else if(restatus = 3)
+			valChance = 35
 		else
-			//2nd male value
+			valChance = 90;
 
 	else if(gender = 2)
 		if(reStatus = 1)
-			// some value
+			valChance = 75;
+		else if(restatus = 3)
+			valChance = 15;
 		else
-			//2nd female value
+			valChance = 30;
 	else
 		if(reStatus = 1)
-			// some value
+			valChance = 13;
+		else if(restatus = 3)
+			valChance = 52;
 		else
-			//2nd other value
+			valChance = 66;
 
 	// function setAge
 	// {
@@ -219,11 +228,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	<!-- main content now-->
 	<center>
+		<p> Please choose the button that you feel best represents you </p>
 <!-- 		<div id="chooserContent" class="w3-container"> -->
-		<a href="#finalpage" onclick="setMale();" class="w3-btn w3-red">Button 1</a>
-  		<a href="#finalpage" onclick="setFemale();" class="w3-btn w3-orange">Button 2</a>
-  		<a href="#finalpage" onclick="setOther();" class="w3-btn w3-yellow">Button 3</a>
+		<a href="#finalpage" onclick="setMale();" class="w3-btn w3-red">he/him</a>
+  		<a href="#finalpage" onclick="setFemale();" class="w3-btn w3-orange">she/her</a>
+  		<a href="#finalpage" onclick="setOther();" class="w3-btn w3-yellow">they/them/other/multiple answers</a>
+
+		<p> Please also choose your relationship status </p>
 	</center>
+	
 <!-- LAST SUBPAGE -->
 <div id="finalpage" class="page">
 	<div id="finalheader" class="w3-container w3-flat-turquoise">
