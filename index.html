@@ -49,7 +49,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 
 
-	function runTimeLeft()
+	function runTimeLeft() //function to get and print the relationship length results
 		{
 		// runs a math function on the given time together and age
 		// the function is very scientific watch
@@ -66,11 +66,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		resetVariables();
 		}
 		
-	function printtimeLeft() //function to print the relationship length results
-	{
-		
-	}
-
 	function printLikelihood() // function to pring the likelihood results (also very mathematical)
 	{
 		document.getElementById("valPercent").innerHTML = "Your likelihood of getting a valentine is " + valCent + " percent.";
@@ -185,11 +180,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	  <a href="#altpage" onclick="runTimeLeft();" class="w3-btn w3-black">How much longer do I have?</a>
   </center>
 </div>  
-
- <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-grey">Button 1</a>
-  <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-grey">Button 2</a>
-  <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-grey">Button 3</a>
-  	  
 	  
 <!-- ALT SUBPAGE -->	  
 <!-- 	I didn't change the name for the page because I'm already used to this and i tried to click it two whole times and missed it every time
@@ -210,8 +200,20 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<a href="#content" onclick="resetVariables();" class="w3-btn w3-black">Back home</a>
 	</center>
 </div>	  
-	  
-<!--LAST SUBPAGE-->
+
+<div id="genChooserPage" class="page"> 	  
+	<div id="chooserHeader" class="w3-container w3-gray">
+		<h1>Time for the Next Step!</h1>
+	</div>
+
+	<!-- main content now-->
+	<center>
+<!-- 		<div id="chooserContent" class="w3-container"> -->
+		<a href="#finalpage" onclick="setMale();" class="w3-btn w3-red">Button 1</a>
+  		<a href="#finalpage" onclick="setFemale();" class="w3-btn w3-orange">Button 2</a>
+  		<a href="#finalpage" onclick="setOther();" class="w3-btn w3-yellow">Button 3</a>
+	</center>
+<!-- LAST SUBPAGE -->
 <div id="finalpage" class="page">
 	<div id="finalheader" class="w3-container w3-flat-turquoise">
 		<h1>FINAL PAGE TITLE GOES HERE</h1>
